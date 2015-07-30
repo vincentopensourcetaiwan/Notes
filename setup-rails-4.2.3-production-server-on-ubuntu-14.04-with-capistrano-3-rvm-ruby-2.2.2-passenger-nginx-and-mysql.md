@@ -9,7 +9,8 @@
     capistrano 3
     
 # steps
-### copy your LOCAL public key to the root user on the server
+### copy your LOCAL public key to the root user on the server (replace 0.0.0.0)
+##### on your workstation
 
     ssh-copy-id root@0.0.0.0
     
@@ -17,16 +18,19 @@ type yes
 
 enter password
 
-### now you can login without password
+### now you can login without password (replace 0.0.0.0)
+##### on your workstation
 
     ssh root@0.0.0.0
     
-### update packages    
+### update packages
+##### on your server
 
     aptitude update
     aptitude safe-upgrade
     
 ### add another user
+##### on your server
        
     adduser creston
     
@@ -48,10 +52,12 @@ enter to confirm the information
 
 
 ### add user to group sudo so that user can sudo all commands
+##### on your server
 
     adduser creston sudo
     
 ### reboot system in case any installed patches require it
+##### on your server
 
     reboot
 
