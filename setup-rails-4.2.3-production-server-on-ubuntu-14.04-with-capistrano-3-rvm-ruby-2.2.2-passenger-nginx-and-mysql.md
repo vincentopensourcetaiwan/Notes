@@ -9,6 +9,8 @@
     capistrano 3
     
 # steps
+### create a server at linode
+
 ### copy your LOCAL public key to the root user on the server (replace 0.0.0.0)
 ##### on your workstation
 
