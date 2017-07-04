@@ -89,7 +89,7 @@ end
 </p>
 ```
 
-## The monent of truth
+## The moment of truth
 **best_quotes/**
 ```
 bundle exec rackup -p 3001
